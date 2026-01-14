@@ -1,0 +1,104 @@
+/* Custom styles for Tempisque Tech */
+
+/* Logo */
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .logo {
+        filter: invert(1);
+    }
+}
+
+/* Header adjustments */
+header h1 {
+    margin-top: 1rem;
+}
+
+/* Two-column address layout */
+.addresses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 80%;
+    margin-top: 1.4rem;
+}
+
+.address {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.address h3 {
+    font-style: normal;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 760px) {
+    .addresses {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
+/* Social/profile links */
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.profile-links a {
+    text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+    .profile-links {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ccc;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        border-top-color: #444;
+        color: #999;
+    }
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.legal-links {
+    margin-top: 1rem;
+}
+
+.legal-links a {
+    margin-right: 1.5rem;
+}
+
+/* Contact email */
+.contact-email {
+    font-size: 1.4rem;
+}
