@@ -1,124 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tempisque Tech | Digital Growth Marketing & Data Analysis</title>
-    <meta name="description" content="Tempisque Tech specializes in digital growth marketing and data analysis for the fintech industry.">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tempisque Tech | Digital Growth Marketing & Data Analysis</title>
+        <meta
+            name="description"
+            content="Tempisque Tech specializes in digital growth marketing and data analysis for the fintech industry."
+        />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Tempisque Tech | Digital Growth Marketing & Data Analysis">
-    <meta property="og:description" content="Digital growth marketing and data analysis for fintech. Advisory, software development, and media services.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tempisque.tech">
+        <!-- Open Graph -->
+        <meta
+            property="og:title"
+            content="Tempisque Tech | Digital Growth Marketing & Data Analysis"
+        />
+        <meta
+            property="og:description"
+            content="Digital growth marketing and data analysis for fintech. Advisory, software development, and media services."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tempisque.tech" />
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Tempisque Tech",
-        "url": "https://tempisque.tech",
-        "email": "contact@tempisque.tech",
-        "founder": {
-            "@type": "Person",
-            "name": "Boaz Sobrado"
-        },
-        "address": [
+        <!-- Structured Data -->
+        <script type="application/ld+json">
             {
-                "@type": "PostalAddress",
-                "streetAddress": "128 City Road",
-                "addressLocality": "London",
-                "postalCode": "EC1V 2NX",
-                "addressCountry": "GB"
-            },
-            {
-                "@type": "PostalAddress",
-                "streetAddress": "2261 Market Street STE 85081",
-                "addressLocality": "San Francisco",
-                "addressRegion": "CA",
-                "postalCode": "94114",
-                "addressCountry": "US"
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Tempisque Tech",
+                "url": "https://tempisque.tech",
+                "email": "contact@tempisque.tech",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Boaz Sobrado"
+                },
+                "address": [
+                    {
+                        "@type": "PostalAddress",
+                        "streetAddress": "128 City Road",
+                        "addressLocality": "London",
+                        "postalCode": "EC1V 2NX",
+                        "addressCountry": "GB"
+                    },
+                    {
+                        "@type": "PostalAddress",
+                        "streetAddress": "2261 Market Street STE 85081",
+                        "addressLocality": "San Francisco",
+                        "addressRegion": "CA",
+                        "postalCode": "94114",
+                        "addressCountry": "US"
+                    }
+                ]
             }
-        ]
-    }
-    </script>
+        </script>
 
-    <!-- Mixpanel (placeholder - replace YOUR_TOKEN with actual token) -->
-    <script>
-    // Mixpanel tracking placeholder
-    // Uncomment and add your token when ready:
-    // (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){...}}})(document,window.mixpanel||[]);
-    // mixpanel.init("YOUR_TOKEN");
-    </script>
+        <!-- Mixpanel -->
+        <script type="text/javascript">
+            (function (e, c) {
+                if (!c.__SV) {
+                    var l, h;
+                    window.mixpanel = c;
+                    c._i = [];
+                    c.init = function (q, r, f) {
+                        function t(d, a) {
+                            var g = a.split(".");
+                            2 == g.length && ((d = d[g[0]]), (a = g[1]));
+                            d[a] = function () {
+                                d.push(
+                                    [a].concat(
+                                        Array.prototype.slice.call(
+                                            arguments,
+                                            0,
+                                        ),
+                                    ),
+                                );
+                            };
+                        }
+                        var b = c;
+                        "undefined" !== typeof f
+                            ? (b = c[f] = [])
+                            : (f = "mixpanel");
+                        b.people = b.people || [];
+                        b.toString = function (d) {
+                            var a = "mixpanel";
+                            "mixpanel" !== f && (a += "." + f);
+                            d || (a += " (stub)");
+                            return a;
+                        };
+                        b.people.toString = function () {
+                            return b.toString(1) + ".people (stub)";
+                        };
+                        l =
+                            "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders start_session_recording stop_session_recording people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(
+                                " ",
+                            );
+                        for (h = 0; h < l.length; h++) t(b, l[h]);
+                        var n = "set set_once union unset remove delete".split(
+                            " ",
+                        );
+                        b.get_group = function () {
+                            function d(p) {
+                                a[p] = function () {
+                                    b.push([
+                                        g,
+                                        [p].concat(
+                                            Array.prototype.slice.call(
+                                                arguments,
+                                                0,
+                                            ),
+                                        ),
+                                    ]);
+                                };
+                            }
+                            for (
+                                var a = {},
+                                    g = ["get_group"].concat(
+                                        Array.prototype.slice.call(
+                                            arguments,
+                                            0,
+                                        ),
+                                    ),
+                                    m = 0;
+                                m < n.length;
+                                m++
+                            )
+                                d(n[m]);
+                            return a;
+                        };
+                        c._i.push([q, r, f]);
+                    };
+                    c.__SV = 1.2;
+                    var k = e.createElement("script");
+                    k.type = "text/javascript";
+                    k.async = !0;
+                    k.src =
+                        "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL
+                            ? MIXPANEL_CUSTOM_LIB_URL
+                            : "file:" === e.location.protocol &&
+                                "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(
+                                    /^\/\//,
+                                )
+                              ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"
+                              : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+                    e = e.getElementsByTagName("script")[0];
+                    e.parentNode.insertBefore(k, e);
+                }
+            })(document, window.mixpanel || []);
 
-    <link rel="stylesheet" href="css/tufte.css">
-    <link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
-    <article>
-        <header>
-            <img src="images/logo.svg" alt="Tempisque Tech" class="logo">
-            <h1>Tempisque Tech</h1>
-        </header>
+            mixpanel.init("7dad878a01f10ee891e561cc780f1b2f", {
+                autocapture: true,
+                record_sessions_percent: 100,
+            });
+        </script>
 
-        <section id="services">
-            <h2>Services</h2>
-            <p>Tempisque Tech specializes in digital growth marketing and data analysis for the fintech industry:</p>
-            <ul>
-                <li><strong>Growth & Analytics Advisory</strong> — Strategic consulting for fintech companies</li>
-                <li><strong>Software Development</strong> — AI-enabled consumer applications</li>
-                <li><strong>Media & Content</strong> — Industry analysis and thought leadership</li>
-            </ul>
-        </section>
+        <link rel="stylesheet" href="css/tufte.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+    </head>
+    <body>
+        <article>
+            <header>
+                <img src="images/logo.svg" alt="Tempisque Tech" class="logo" />
+                <h1>Tempisque Tech</h1>
+            </header>
 
-        <section id="founder">
-            <h2>Founder</h2>
-            <p><strong>Boaz Sobrado</strong>, Founder</p>
-            <nav class="profile-links">
-                <a href="https://boazsobrado.com/" target="_blank" rel="noopener">Personal Website</a>
-                <a href="https://www.forbes.com/sites/boazsobrado/" target="_blank" rel="noopener">Forbes</a>
-                <a href="https://www.linkedin.com/in/boazsobrado/" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="https://www.on-the-margin.com/" target="_blank" rel="noopener">On The Margin</a>
-            </nav>
-        </section>
+            <section id="services">
+                <h2>Services</h2>
+                <p>
+                    Tempisque Tech specializes in digital growth marketing and
+                    data analysis for the fintech industry:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Growth & Analytics Advisory</strong> — Strategic
+                        consulting for fintech companies
+                    </li>
+                    <li>
+                        <strong>Software Development</strong> — AI-enabled
+                        consumer applications
+                    </li>
+                    <li>
+                        <strong>Media & Content</strong> — Industry analysis and
+                        thought leadership
+                    </li>
+                </ul>
+            </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p class="contact-email"><a href="mailto:contact@tempisque.tech">contact@tempisque.tech</a></p>
-        </section>
+            <section id="founder">
+                <h2>Founder</h2>
+                <p><strong>Boaz Sobrado</strong>, Founder</p>
+                <nav class="profile-links">
+                    <a
+                        href="https://boazsobrado.com/"
+                        target="_blank"
+                        rel="noopener"
+                        >Personal Website</a
+                    >
+                    <a
+                        href="https://www.forbes.com/sites/boazsobrado/"
+                        target="_blank"
+                        rel="noopener"
+                        >Forbes</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/boazsobrado/"
+                        target="_blank"
+                        rel="noopener"
+                        >LinkedIn</a
+                    >
+                    <a
+                        href="https://www.on-the-margin.com/"
+                        target="_blank"
+                        rel="noopener"
+                        >On The Margin</a
+                    >
+                </nav>
+            </section>
 
-        <section id="locations">
-            <h2>Locations</h2>
-            <div class="addresses">
-                <div class="address">
-                    <h3>United Kingdom</h3>
-                    <p>
-                        128 City Road<br>
-                        London, EC1V 2NX<br>
-                        United Kingdom
-                    </p>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p class="contact-email">
+                    <a href="mailto:contact@tempisque.tech"
+                        >contact@tempisque.tech</a
+                    >
+                </p>
+            </section>
+
+            <section id="locations">
+                <h2>Locations</h2>
+                <div class="addresses">
+                    <div class="address">
+                        <h3>United Kingdom</h3>
+                        <p>
+                            128 City Road<br />
+                            London, EC1V 2NX<br />
+                            United Kingdom
+                        </p>
+                    </div>
+                    <div class="address">
+                        <h3>United States</h3>
+                        <p>
+                            2261 Market Street STE 85081<br />
+                            San Francisco, CA 94114<br />
+                            United States
+                        </p>
+                    </div>
                 </div>
-                <div class="address">
-                    <h3>United States</h3>
-                    <p>
-                        2261 Market Street STE 85081<br>
-                        San Francisco, CA 94114<br>
-                        United States
-                    </p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <footer>
-            <p>TEMPISQUE TECH LIMITED is registered in England and Wales. Company No. 15942273</p>
-            <p>TEMPISQUE TECHNOLOGY COMPANY is a Delaware LLC</p>
-            <p>&copy; 2026 Tempisque Tech. All rights reserved.</p>
-            <p class="legal-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-            </p>
-        </footer>
-    </article>
-</body>
+            <footer>
+                <p>
+                    TEMPISQUE TECH LIMITED is registered in England and Wales.
+                    Company No. 15942273
+                </p>
+                <p>TEMPISQUE TECHNOLOGY COMPANY is a Delaware LLC</p>
+                <p>&copy; 2026 Tempisque Tech. All rights reserved.</p>
+                <p class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </p>
+            </footer>
+        </article>
+    </body>
 </html>
