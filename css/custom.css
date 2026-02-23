@@ -7,12 +7,6 @@
     margin-bottom: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-    .logo {
-        filter: invert(1);
-    }
-}
-
 /* Header adjustments */
 header h1 {
     margin-top: 1rem;
